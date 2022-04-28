@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yyh-fy-Ofl">
-                                <rect key="frame" x="0.0" y="-10" width="390" height="274"/>
+                                <rect key="frame" x="0.0" y="-10" width="390" height="450.66666666666669"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="oQC-q8-RHI">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="274"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="450.66666666666669"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXZ-Ob-hXk">
                                         <rect key="frame" x="16" y="106" width="328" height="42"/>
@@ -46,10 +46,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRn-GK-sjS">
-                                <rect key="frame" x="16" y="170" width="358" height="413"/>
+                                <rect key="frame" x="16" y="170.00000000000003" width="358" height="478.66666666666674"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSj-lr-i8Z">
-                                        <rect key="frame" x="16" y="15.999999999999996" width="146.66666666666666" height="51.666666666666657"/>
+                                        <rect key="frame" x="16" y="16.000000000000004" width="146.66666666666666" height="51.333333333333343"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="nSj-lr-i8Z" secondAttribute="height" multiplier="146:51" id="V9y-ae-JMw"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Sell" buttonSize="large">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
@@ -58,7 +61,10 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMc-eV-dbm">
-                                        <rect key="frame" x="195.66666666666663" y="15.999999999999996" width="146.33333333333337" height="51.666666666666657"/>
+                                        <rect key="frame" x="195.66666666666663" y="16.000000000000004" width="146.33333333333337" height="51.333333333333343"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kMc-eV-dbm" secondAttribute="height" multiplier="146:51" id="U1M-cX-zIh"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Buy">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
@@ -66,57 +72,119 @@
                                             <color key="baseBackgroundColor" name="bg"/>
                                         </buttonConfiguration>
                                     </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ia-Kg-HRo">
+                                        <rect key="frame" x="120" y="91.333333333333314" width="222" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j1l-ex-ibQ">
+                                        <rect key="frame" x="120" y="141.33333333333331" width="222" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kcv-XF-NUx">
+                                        <rect key="frame" x="120" y="191.33333333333331" width="222" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="plus.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="W8W-PD-SNo">
+                                        <rect key="frame" x="122" y="247.66666666666666" width="20" height="18.666666666666686"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="2Wt-cS-b0s"/>
+                                            <constraint firstAttribute="width" constant="20" id="Nat-lg-ssJ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4QJ-fo-hpV">
+                                        <rect key="frame" x="331" y="449.33333333333337" width="19" height="21"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycq-3c-3i5">
+                                        <rect key="frame" x="112" y="241.33333333333331" width="183" height="31"/>
+                                        <state key="normal" title="Button" backgroundImage="plus.circle.fill" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Add Currency">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                        </buttonConfiguration>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" name="texts"/>
                                 <constraints>
+                                    <constraint firstItem="ycq-3c-3i5" firstAttribute="leading" secondItem="SRn-GK-sjS" secondAttribute="leading" constant="112" id="3Bs-Dz-gjv"/>
+                                    <constraint firstItem="ycq-3c-3i5" firstAttribute="leading" secondItem="W8W-PD-SNo" secondAttribute="trailing" constant="-30" id="3LF-qw-tpI"/>
                                     <constraint firstItem="kMc-eV-dbm" firstAttribute="leading" secondItem="nSj-lr-i8Z" secondAttribute="trailing" constant="32.999999999999972" id="7mI-Ni-aFD"/>
+                                    <constraint firstItem="Kcv-XF-NUx" firstAttribute="leading" secondItem="SRn-GK-sjS" secondAttribute="leading" constant="120" id="C57-O2-47t"/>
+                                    <constraint firstAttribute="bottom" secondItem="4QJ-fo-hpV" secondAttribute="bottom" constant="8" id="CZA-k2-mPd"/>
+                                    <constraint firstItem="j1l-ex-ibQ" firstAttribute="leading" secondItem="SRn-GK-sjS" secondAttribute="leading" constant="120" id="DAa-eo-srB"/>
+                                    <constraint firstAttribute="trailing" secondItem="ycq-3c-3i5" secondAttribute="trailing" constant="63" id="E9F-gV-9rs"/>
+                                    <constraint firstItem="Kcv-XF-NUx" firstAttribute="top" secondItem="j1l-ex-ibQ" secondAttribute="bottom" constant="16" id="EGR-ys-1xP"/>
                                     <constraint firstAttribute="trailing" secondItem="kMc-eV-dbm" secondAttribute="trailing" constant="16" id="GUw-E7-MOL"/>
                                     <constraint firstItem="kMc-eV-dbm" firstAttribute="height" secondItem="nSj-lr-i8Z" secondAttribute="height" id="HUd-Rh-9dW"/>
+                                    <constraint firstItem="7ia-Kg-HRo" firstAttribute="leading" secondItem="SRn-GK-sjS" secondAttribute="leading" constant="120" id="JKb-3w-ENq"/>
+                                    <constraint firstItem="j1l-ex-ibQ" firstAttribute="top" secondItem="7ia-Kg-HRo" secondAttribute="bottom" constant="16" id="KLf-pQ-8Xj"/>
                                     <constraint firstItem="nSj-lr-i8Z" firstAttribute="baseline" secondItem="kMc-eV-dbm" secondAttribute="baseline" id="KxA-8I-0Gs"/>
                                     <constraint firstItem="nSj-lr-i8Z" firstAttribute="leading" secondItem="SRn-GK-sjS" secondAttribute="leading" constant="16" id="MtX-l1-ZSU"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kcv-XF-NUx" secondAttribute="trailing" constant="16" id="O6D-jV-CVe"/>
+                                    <constraint firstAttribute="trailing" secondItem="j1l-ex-ibQ" secondAttribute="trailing" constant="16" id="P0D-Ng-yqn"/>
+                                    <constraint firstItem="ycq-3c-3i5" firstAttribute="top" secondItem="Kcv-XF-NUx" secondAttribute="bottom" constant="16" id="POs-Da-8Mc"/>
                                     <constraint firstItem="nSj-lr-i8Z" firstAttribute="top" secondItem="SRn-GK-sjS" secondAttribute="top" constant="16" id="YAf-jD-VTm"/>
                                     <constraint firstItem="kMc-eV-dbm" firstAttribute="top" secondItem="SRn-GK-sjS" secondAttribute="top" constant="16" id="gxR-5A-lah"/>
+                                    <constraint firstAttribute="trailing" secondItem="7ia-Kg-HRo" secondAttribute="trailing" constant="16" id="iPe-jJ-QHX"/>
+                                    <constraint firstItem="7ia-Kg-HRo" firstAttribute="top" secondItem="kMc-eV-dbm" secondAttribute="bottom" constant="24" id="nO4-V7-dCg"/>
+                                    <constraint firstItem="ycq-3c-3i5" firstAttribute="centerY" secondItem="W8W-PD-SNo" secondAttribute="centerY" id="ssw-XR-vCl"/>
+                                    <constraint firstAttribute="trailing" secondItem="4QJ-fo-hpV" secondAttribute="trailing" constant="8" id="y4M-cl-04I"/>
                                     <constraint firstItem="nSj-lr-i8Z" firstAttribute="width" secondItem="kMc-eV-dbm" secondAttribute="width" id="zca-f8-4bJ"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oqr-5I-Ufm">
-                                <rect key="frame" x="16" y="684" width="358" height="57"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="57" id="ppc-zf-vhz"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFz-4p-DUD">
+                                <rect key="frame" x="16" y="709.66666666666663" width="358" height="43.333333333333371"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="National Bank Exchange Rate">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                <buttonConfiguration key="configuration" style="filled" title="National Bank Exchange Rate" buttonSize="large">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" name="bg"/>
                                 </buttonConfiguration>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Updated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQ2-vx-R7m">
+                                <rect key="frame" x="16" y="664.66666666666663" width="77" height="14.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSu-tF-m9F">
+                                <rect key="frame" x="16" y="680.33333333333337" width="26.666666666666671" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="B0z-ID-vw0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="SRn-GK-sjS" firstAttribute="top" secondItem="B0z-ID-vw0" secondAttribute="top" constant="126" id="8zm-d6-o4U"/>
-                            <constraint firstItem="B0z-ID-vw0" firstAttribute="bottom" secondItem="Oqr-5I-Ufm" secondAttribute="bottom" constant="20" id="91N-N7-tbH"/>
+                            <constraint firstItem="MQ2-vx-R7m" firstAttribute="leading" secondItem="B0z-ID-vw0" secondAttribute="leading" constant="16" id="0fg-rp-iOs"/>
+                            <constraint firstItem="SRn-GK-sjS" firstAttribute="top" secondItem="B0z-ID-vw0" secondAttribute="top" constant="126" id="3LB-sp-isV"/>
+                            <constraint firstItem="cSu-tF-m9F" firstAttribute="top" secondItem="MQ2-vx-R7m" secondAttribute="bottom" constant="1" id="51n-P0-lS8"/>
+                            <constraint firstItem="rFz-4p-DUD" firstAttribute="top" secondItem="cSu-tF-m9F" secondAttribute="bottom" constant="14.5" id="Bmr-gc-9b2"/>
                             <constraint firstAttribute="trailing" secondItem="yyh-fy-Ofl" secondAttribute="trailing" id="GkC-qn-bgN"/>
-                            <constraint firstItem="SRn-GK-sjS" firstAttribute="trailing" secondItem="Oqr-5I-Ufm" secondAttribute="trailing" id="RbY-dw-jXl"/>
+                            <constraint firstItem="rFz-4p-DUD" firstAttribute="bottom" secondItem="B0z-ID-vw0" secondAttribute="bottom" constant="-8" id="OyE-Gx-x1k"/>
+                            <constraint firstItem="rFz-4p-DUD" firstAttribute="leading" secondItem="B0z-ID-vw0" secondAttribute="leading" constant="16" id="UAv-Q3-JUE"/>
+                            <constraint firstItem="SRn-GK-sjS" firstAttribute="height" secondItem="oQC-q8-RHI" secondAttribute="height" multiplier="1.06204" id="UDZ-sP-Y7Q"/>
                             <constraint firstItem="yyh-fy-Ofl" firstAttribute="leading" secondItem="AzF-Jx-GTt" secondAttribute="leading" id="WaY-o0-zNg"/>
                             <constraint firstItem="yyh-fy-Ofl" firstAttribute="centerX" secondItem="SRn-GK-sjS" secondAttribute="centerX" id="Wgt-RT-eXN"/>
+                            <constraint firstItem="rFz-4p-DUD" firstAttribute="height" secondItem="nSj-lr-i8Z" secondAttribute="height" multiplier="0.846154" id="Ye7-9G-Pip"/>
                             <constraint firstItem="SRn-GK-sjS" firstAttribute="leading" secondItem="AzF-Jx-GTt" secondAttribute="leadingMargin" id="b76-Nx-dsy"/>
-                            <constraint firstItem="SRn-GK-sjS" firstAttribute="leading" secondItem="Oqr-5I-Ufm" secondAttribute="leading" id="jNe-st-Efw"/>
+                            <constraint firstItem="MQ2-vx-R7m" firstAttribute="top" secondItem="SRn-GK-sjS" secondAttribute="bottom" constant="16" id="iEo-2F-QJR"/>
+                            <constraint firstItem="cSu-tF-m9F" firstAttribute="leading" secondItem="B0z-ID-vw0" secondAttribute="leading" constant="16" id="mfh-Xg-NeG"/>
                             <constraint firstItem="yyh-fy-Ofl" firstAttribute="top" secondItem="AzF-Jx-GTt" secondAttribute="topMargin" constant="-54" id="ofa-eg-Btu"/>
-                            <constraint firstAttribute="bottom" secondItem="SRn-GK-sjS" secondAttribute="bottom" constant="261" id="vJL-Bt-2GR"/>
+                            <constraint firstItem="B0z-ID-vw0" firstAttribute="trailing" secondItem="rFz-4p-DUD" secondAttribute="trailing" constant="16" id="q6V-Q5-GAO"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Exchange" image="dollarsign.square" catalog="system" id="SR2-6e-ruX"/>
                     <connections>
-                        <outlet property="linkButton" destination="Oqr-5I-Ufm" id="Y7H-FM-LF3"/>
                         <outlet property="smallView" destination="SRn-GK-sjS" id="xcf-bJ-ZEB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vqh-zk-tRp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1613.8461538461538" y="82.464454976303315"/>
+            <point key="canvasLocation" x="1612.5" y="80.281690140845072"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eqv-Im-djP">
@@ -466,6 +534,8 @@
         <image name="Image" width="375" height="274"/>
         <image name="candybarphone" catalog="system" width="97" height="128"/>
         <image name="dollarsign.square" catalog="system" width="128" height="114"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <namedColor name="bg">
             <color red="0.2199999988079071" green="0.32899999618530273" blue="0.48199999332427979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

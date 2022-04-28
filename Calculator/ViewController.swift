@@ -114,12 +114,13 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         smallView.layer.cornerRadius = 10
+        
         smallView.layer.shadowRadius = 4
         smallView.layer.shadowOpacity = 0.15
         smallView.layer.shadowOffset = CGSize(width: 0, height: 4)
-//      smallView.layer.shadowColor = CGColor(red: 0, green: 0, blue: 0, alpha: 0.15)
-        linkButton.layer.borderWidth = 2
-        linkButton.layer.borderColor = UIColor(named: "boarder")?.cgColor
+
+//        linkButton.layer.borderWidth = 2
+//        linkButton.layer.borderColor = UIColor(named: "boarder")?.cgColor
         
     }
 }
