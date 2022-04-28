@@ -3,7 +3,7 @@
 //  Calculator
 //
 //  Created by Ihor on 10.04.2022.
-//chekcheck
+//
 
 import UIKit
 
